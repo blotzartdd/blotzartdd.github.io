@@ -1,87 +1,50 @@
-body{
-    padding:50px;
+.block{
+    margin: 250px;
+    width: 1400px;
+    height: 300px;
+    background-color: aliceblue;
 }
+
+.row{
+    background-color: darkcyan;
+    padding: 10px;
+    display: flex;
+
+}
+
+.col{
+    background-color: chocolate;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 200px;
+    border: 1px solid black;
+    text-align: center;
+    
+}
+
 /*
-.box{
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    background-color: azure;
-    transition: all 2s 0.1s ease;
+justify-content: space-around; По горизонтали
+align-items: flex-end; По вертикали  --- align-self: stretch; Для элемента
+
+flex-wrap: wrap;
+
+flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex: 1 1 300px;
+
+.col2{
+    order: 3;
 }
 
-.box span{
-    display: block;
-    text-align: center;
-    margin-top: 90px;
+.col1{
+    order: 2;
 }
 
-.box:hover{
-    background-color: red;
-    width: 300px;
-    opacity: 0;
+.col3{
+    order: 1;
 }
 
-
-.box:active{
-    margin-left: 900px;
-}
+display: flex;
+flex-direction: column; Направление(смещение оси)
 */
-
-.box{
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-    background-color: azure;
-    animation-name: move;
-    animation-duration: 2s;
-    animation-delay: 0.1s;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
-    animation: move 2s infinite alternate, color 2s infinite;
-    animation-fill-mode: forwards;/* Если останавливается, то в конце */
-}
-
-.box span{
-    display: block;
-    text-align: center;
-    margin-top: 90px;
-}
-
-@keyframes color{
-    0%{
-        background: red;
-    }
-
-    20%{
-        background: green;
-    }
-
-    40%{
-        background: blue;
-    }
-
-    60%{
-        background: orange;
-    }
-    80%{
-        background: chartreuse;
-    }
-    100%{
-        background: yellow;
-    }
-}
-
-@keyframes move{
-    from{
-        margin-left: 0;
-    }
-
-    to{
-        margin-left: 300px;
-    }
-}
-
-.box:hover{
-    animation-play-state: paused;
-}

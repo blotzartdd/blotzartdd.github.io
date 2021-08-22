@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'FranklinGothicMedium';
+	src: url('../fonts/framd.eot');
+	src: local('☺'), url('../fonts/framd.woff') format('woff'), 
+    url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,20 +21,19 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
-    z-index: 2;
+    z-index: 10;
     opacity: 0.9;
 }
 
 .name_logo{
     color: #fff;
-    font-weight: 400;
     font-size: 20px;
     line-height: 60px;
-    padding-left: 388px;
     float: left;
     -webkit-animation: comming 2s ease;
     -o-animation: comming 2s ease;
     animation: comming 2s ease;
+    font-family: 'FraknlinGothicMedium', sans-serif;
 }
 
 @keyframes comming{
@@ -52,7 +60,6 @@ nav{
 
 .menu{
     float: left;
-    padding-left: 20%;
 }
 
 .menu li{
@@ -96,7 +103,7 @@ nav{
 
     to{
         opacity: 1;
-        margin-left: 380px;
+        margin-left: 0px;
     }
 }
 
@@ -105,6 +112,7 @@ nav{
     color: white;
     display: inline-block;
     transform: scale(1);
+    text-decoration: none;
 }
 
 .menu li a:hover{
@@ -123,9 +131,9 @@ nav{
 
 .title_container{
     float: left;
-    margin: 20% 0px 0px 380px;
     color: #2c384a;
     text-align: center;
+    width: 100%;
     opacity: 0;
     -webkit-animation: title_move 1s forwards ease;
     -o-animation: title_move 1s forwards ease;
@@ -137,7 +145,7 @@ nav{
 
 .title_container h1{
     font-size: 60px;
-    font-weight: bold;
+    font-family: 'FraknlinGothicMedium', sans-serif;
 }
 
 .title_container h4{
@@ -205,14 +213,17 @@ nav{
 }
 
 .about_me p{
-    margin-left: 35%;
     margin-bottom: 40px;
+    font-family: 'FranklinGothicMedium';
     color: #3f495a;
 }
 
 .download_img{
-    padding: 10px 20px 10px 20px;
-    margin: 0px 45% 110px calc(50% - 50px);
+    font-family: 'FranklinGothicMedium';
+	color: #6f707f;
+    font-size: 15px;
+    padding: 10px 20px 10px 50px;
+    margin-bottom: 100px;
     border: 2px solid #6f707e;
     border-radius: 5px;
     background: url("../img/download.jpg") left/auto 50% no-repeat;
@@ -234,6 +245,23 @@ nav{
     font-size: 25px;
     font-weight: bold;
     color: #263244;
+}
+
+@media (max-width: 1000px){
+    .laptop_webdesign{
+        border-right: 3px solid #304154;
+    }
+    .sign_development{
+        border-right: 3px solid #304154;
+    }
+    .rocket_ceooptimization{
+        border-right: 3px solid #304154;
+    }
+}
+
+.third_page_icons{
+    display: flex;
+    justify-content: space-around;
 }
 
 .third_page_icons p{
@@ -272,8 +300,6 @@ nav{
 .laptop_webdesign{
     float: left;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 96px;
 }
 
 .laptop_webdesign p{
@@ -282,7 +308,6 @@ nav{
 }
 .sign_development{
     float: left;
-    margin-right: 96px;
     text-align: center;
 }
 
@@ -293,7 +318,6 @@ nav{
 .rocket_ceooptimization{
     float: left;
     text-align: center;
-    margin-right: 96px;
 }
 
 .rocket_ceooptimization p{
@@ -330,12 +354,8 @@ nav{
     margin-bottom: 46px;
 }
 
-.ocimg{
-    text-align: center;
-}
-
 .case_description{
-    margin-left: 11.7%;
+    display: flex;
 }
 
 .case_description h4{
@@ -348,8 +368,22 @@ nav{
 .case_description p{
     margin-bottom: 15px;
     margin-top: 15px;
-    color: #3f495a;
+    color: #5f6c7b;
+    font-family: 'FranklinGothicMedium';;
 }
+.client_and_website_block{
+    margin-right: 15px;
+}
+
+.client_and_website_block a{
+    text-decoration: none;
+    color: #5f6c7b;
+}
+
+.client_and_website_block a:hover{
+    color: #4d8cd6;
+}
+
 .case_description input{
     color: #fff;
     background-color: #63b5ae;
@@ -367,17 +401,10 @@ nav{
     transform: rotate(0deg);
 }
 
-.case_description>h5{
-    float: right;
-    margin-right: 75%;
+.case_description h5{
     color: #384354;
     font-weight: bold;
     font-size: 17px;
-}
-
-.case_description span{
-    float: right;
-    margin-right: 29.2%;
 }
 
 .fifth_page_main h2{
@@ -408,6 +435,12 @@ nav{
     font-size: 20px;
 }
 
+
+@media (max-width: 1000px){
+    .site_type h3{
+        text-align: center;
+    }
+}
 .website_design h3{
     margin-right: 895px;
 }
@@ -472,6 +505,7 @@ nav{
     background-attachment: fixed;
 }
 
+
 .statistics h3{
     text-align: center;
     padding-top: 60px;
@@ -486,25 +520,25 @@ nav{
     margin-bottom: 40px;
 }
 
+.sixth_page_icons{
+    display: flex;
+    justify-content: space-around;
+}
 .smile{
     text-align: center;
     float: left;
-    margin-left: 10%;
     padding-bottom: 4%;
 }
 
 .orange_sign{
     text-align: center;
     float: left;
-    margin-left: 15%;
     padding-bottom: 4%;
 }
 
 .check_mark{
     text-align: center;
     float: left;
-    margin-left: 12%;
-    margin-right: 5%;
     padding-bottom: 4%;
 } 
 
@@ -570,22 +604,27 @@ nav{
     text-align: center;
     margin-bottom: 15px;
 }
+.eighth_page_upper_icons{
+    display: flex;
+    justify-content: space-around;
+}
+.eighth_page_upper_icons img{
+    margin-bottom: 20px;
+}
 
 .geolocation{
-    margin-left: 25%;
     text-align: center;
     float: left;
 }
 
 .letter{
-    margin-left: 10%;
     text-align: center;
     float: left;
 }
 
 .phone{
-    margin-right: 10%;
     text-align: center;
+    float: left;
 }
 
 .leave_me_a_message h4{
@@ -596,9 +635,6 @@ nav{
     font-size: 16px;
 }
 
-.eighth_page_upper_icons img{
-    margin-bottom: 20px;
-}
 
 .leave_me_a_message input{
     width: 393px;
@@ -705,8 +741,38 @@ footer{
     } 
 }
 
+.custom_css3{
+    font-size: 40px;
+}
 
+.white-btn:visited{
+    color:White
+}
 
+@media (max-width: 991px){
+    .title_container, .title_container input{
+        color: white;
+        position: relative;
+        z-index: 3
+    }
 
+    .main{
+        position: relative;
+    }
+
+    .main::after{
+        content: "";
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4)
+    }
+
+    .title_container input{
+        border: 2px solid #fff;
+    }
+}
 
 

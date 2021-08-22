@@ -9,12 +9,15 @@
     <meta name="description" content="Это моя первая страница">
     
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Веб-разработка</title>
     
 </head>
 <body>
+    <!--
     <div class="loader">
         <div class="loader_elements">
             <span class="loader_elem"></span>
@@ -23,48 +26,93 @@
         </div>
         <p class="loader_name">Загрузка</p>
     </div>
+    -->
 
     <header>
         <nav>
-            <div class="name_logo">Матвей Замятин</div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Обо мне</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Прайс</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="name_logo">Матвей Замятин</div>
+                    </div>
+                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1
+                    d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                              Навигация
+                            </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
             </div>
+            
         </nav>
     </header>
 
     <main>
 
         <section class="first_page_main">
-            <div class="title_container">
-                <h1>Привет<br>Я Матвей Замятин</h1>
-                <h4>Изучаю веб-разработку</h4>
-                <input type="button" value="Обо мне">
-                <input type="button" value="Мои работы">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6">
+                        <div class="title_container">
+                            <h1>Привет<br>Я Матвей Замятин</h1>
+                            <h4<i class="fa fa-css3 custom_css3" aria-hidden="true"></i>Изучаю веб-разработку</h4><br>
+                            <input type="button" value="Обо мне">
+                            <input type="button" value="Мои работы">
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </section>
 
         <section class="second_page_main">
-            <div class="about_me">
-                <h3>ОБО МНЕ</h3>
-                <div class="orange_line1">
-                    <img src="img/orangeline.jpg" alt="Оранжевая линия">
-                </div>
-                <div class="my_photo">
-                    <img src="img/myphoto.jpg" alt="Моя фотография">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, omnis dicta? 
-                    <br>Sapiente iste aut maiores libero incidunt aliquid culpa optio.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, omnis dicta? 
-                    <br>Sapiente iste aut maiores libero incidunt aliquid culpa optio.</p>
-                <div class="download_img">
-                    <input type="submit" value="Скачать резюме">
+            <div class="container">
+                <div class="row">
+                    <div class="about_me">
+                        <h3>ОБО МНЕ</h3>
+                        <div class="orange_line1">
+                            <img src="img/orangeline.jpg" alt="Оранжевая линия">
+                        </div>
+                        <div class="my_photo">
+                            <img src="img/myphoto.jpg" alt="Моя фотография">
+                        </div>
+                        <div class="col-xxl-8 col-xl-9 col-lg-11 col-md-12
+                         offset-xxl-2 offset-xl-2 offset-lg-1">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ea nam rem repellendus placeat repellat explicabo sed ullam veniam, doloribus recusandae quaerat ab cumque, quo ipsa voluptas, dignissimos incidunt nihil nemo voluptatibus deserunt?</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate ea nam rem repellendus placeat repellat explicabo sed ullam veniam, doloribus recusandae quaerat ab cumque, quo ipsa voluptas, dignissimos incidunt nihil nemo voluptatibus deserunt?</p>
+                        </div>
+                        
+                        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-5
+                        offset-xl-5 offset-lg-4 offset-md-4 offset-sm-3">
+                            <div class="download_img">
+                                <input type="submit" value="  Скачать резюме">
+                            </div>
+                        </div>
+                            
+                    </div>
                 </div>
             </div>
         </section>
@@ -106,66 +154,81 @@
         </section>
 
         <section class="fourth_page_main">
-            <div class="cases">
-                <h3>КЕЙСЫ</h3>
-                <div class="orange_line3">
-                    <img src="img/orangeline.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="cases">
+                        <h3>КЕЙСЫ</h3>
+                        <div class="orange_line3">
+                            <img src="img/orangeline.jpg" alt="">
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Vero atque sit cumque, cupiditate non nulla.</p>
+                        <div class="col-12">
+                            <p><img src="img/fourthpageimg.jpg" alt="OpenCloud"></p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="case_description">
+                            <div class="client_and_website_block">
+                                <h4>CLIENT:</h4>
+                                <p>Какая-то компания</p>
+                                <p></p><h4>WEBSITE:</h4><p><a href="http://www.somedomain.com" target="blank">http://www.somedomain.com</a></p></p>
+                                <input type="submit" value="VISIT LIVE SITE">
+                            </div>
+                            <div class="project_name_block">
+                                <h5>Название проекта</h5>
+                                <p class="project_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus expedita optio saepe nulla asperiores consectetur placeat culpa debitis, in officiis temporibus voluptates deserunt accusamus itaque quos labore repudiandae iusto aliquid quia repellat alias? Fuga, consectetur dignissimos aliquam nemo impedit consequatur officia placeat provident error, accusantium voluptas, neque dolorem aspernatur velit veritatis.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Vero atque sit cumque, cupiditate non nulla.</p>
-                <p class="ocimg"><img src="img/fourthpageimg.jpg" alt="OpenCloud"></p>
-            </div>
-            <div class="case_description">
-                <p><h4>CLIENT:</h4>
-                    <h5>Название проекта</h5>
-                    <p>Какая-то компания<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Consectetur dolorem laboriosam, voluptate laborum illum 
-                        cupiditate<br>quasi facere animi provident tempore, quisquam quo distinctio 
-                        consequuntur molestiae, ut quia tempora assumenda natus.</span></p>
-                </p>
-                <p><h4>WEBSITE:</h4><p><a href="http://www.somedomain.com" target="blank">http://www.somedomain.com</a></p></p>
-                <input type="submit" value="VISIT LIVE SITE">
             </div>
         </section>
 
         <section class="fifth_page_main">
-            <h2>Расчет стоимости</h2>
-            <div class="site_type">
-                <h3>ТИП САЙТА</h3>
-                <select name="site_list" id="site_list">
-                    <option value="" disabled selected>Выберите пункт...</option>
-                    <option value="business_card">Сайт-визитка</option>
-                    <option value="corporate">Корпоративный сайт</option>
-                    <option value="online_store">Интернет-магазин</option>
-                    <option value="informational">Информационный сайт</option>
-                    <option value="target_page">Целевая страница</option>
-                    <option value="news">Новостной сайт</option>
-                    <option value="theme">Тематический сайт</option>
-                    <option value="handbook">Сайт-справочник</option>
-                </select>
+            <div class="container">
+                <div class="row">
+                    <h2>Расчет стоимости</h2>
+                    <div class="site_type">
+                        <h3>ТИП САЙТА</h3>
+                            <select name="site_list" id="site_list">
+                                <option value="" disabled selected>Выберите пункт...</option>
+                                <option value="business_card">Сайт-визитка</option>
+                                <option value="corporate">Корпоративный сайт</option>
+                                <option value="online_store">Интернет-магазин</option>
+                                <option value="informational">Информационный сайт</option>
+                                <option value="target_page">Целевая страница</option>
+                                <option value="news">Новостной сайт</option>
+                                <option value="theme">Тематический сайт</option>
+                                <option value="handbook">Сайт-справочник</option>
+                            </select>
+                        
+                    </div>
+                    <div class="website_design">
+                        <h3>ДИЗАЙН</h3>
+                        <select name="design_options" id="design_options">
+                            <option value="" disabled selected>Выберите пункт...</option>
+                            <option value="design">Дизайн</option>
+                        </select>
+                    </div>
+                    <div class="adaptability">
+                        <h3>АДАПТИВНОСТЬ</h3>
+                        <select name="adaptability_options" id="adaptability_options">
+                            <option value="" disabled selected>Выберите пункт...</option>
+                            <option value="mobile">Только мобильные устройства</option>
+                            <option value="pc">Только ПК</option>
+                            <option value="pc_and_mobile">Мобильные устройства и ПК</option>
+                        </select>
+                    </div>
+                    <p><img src="img/total_line.jpg" alt="Линия подитога"></p>
+                    <div class="price_and_time">
+                        <h5 class="timing">Сроки 0</h5>
+                        <h5 class="price">Стоимость 0</h5>
+                        <input type="submit" value="Оставить заявку">
+                    </div>
+                </div>
             </div>
-            <div class="website_design">
-                <h3>ДИЗАЙН</h3>
-                <select name="design_options" id="design_options">
-                    <option value="" disabled selected>Выберите пункт...</option>
-                    <option value="design">Дизайн</option>
-                </select>
-            </div>
-            <div class="adaptability">
-                <h3>АДАПТИВНОСТЬ</h3>
-                <select name="adaptability_options" id="adaptability_options">
-                    <option value="" disabled selected>Выберите пункт...</option>
-                    <option value="mobile">Только мобильные устройства</option>
-                    <option value="pc">Только ПК</option>
-                    <option value="pc_and_mobile">Мобильные устройства и ПК</option>
-                </select>
-            </div>
-            <p><img src="img/total_line.jpg" alt="Линия подитога"></p>
-            <div class="price_and_time">
-                <h5 class="timing">Сроки 0</h5>
-                <h5 class="price">Стоимость 0</h5>
-                <input type="submit" value="Оставить заявку">
-            </div>
+            
         </section>
 
         <section class="sixth_page_main">
@@ -174,26 +237,29 @@
                 <div class="orange_line4">
                     <img src="img/orangeline.jpg" alt="">
                 </div>
-                <div class="smile">
+                <div class="sixth_page_icons">
+                    <div class="smile">
                     <img src="img/smile.jpg" alt="Смайлик">
                     <h2>120</h2>
                     <span>СЧАСТЛИВЫХ КЛИЕНТОВ</span>
+                    </div>
+                    <div class="orange_sign">
+                        <img src="img/orangesign.jpg" alt="Скобки">
+                        <h2>4,600</h2>
+                        <span>ЧАСОВ РАБОТЫ</span>
+                    </div>
+                    <div class="check_mark">
+                        <img src="img/checkmark.jpg" alt="Галочка">
+                        <h2>340</h2>
+                        <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
+                    </div>
+                    <div class="cup">
+                        <img src="img/cup.jpg" alt="Кубок">
+                        <h2>23</h2>
+                        <span>НАГРАД ПОЛУЧЕНО</span>
+                    </div>
                 </div>
-                <div class="orange_sign">
-                    <img src="img/orangesign.jpg" alt="Скобки">
-                    <h2>4,600</h2>
-                    <span>ЧАСОВ РАБОТЫ</span>
-                </div>
-                <div class="check_mark">
-                    <img src="img/checkmark.jpg" alt="Галочка">
-                    <h2>340</h2>
-                    <span>ПРОЕКТОВ ЗАВЕРШЕНО</span>
-                </div>
-                <div class="cup">
-                    <img src="img/cup.jpg" alt="Кубок">
-                    <h2>23</h2>
-                    <span>НАГРАД ПОЛУЧЕНО</span>
-                </div>
+                
             </div>
         </section>
 
@@ -218,39 +284,44 @@
         </section>
 
         <section class="eighth_page_main">
-            <div class="my_contacts">
-                <h3>МОИ КОНТАКТЫ</h3>
-                <div class="orange_line4">
-                    <img src="img/orangeline.jpg" alt="">
+                    <div class="my_contacts">
+                        <h3>МОИ КОНТАКТЫ</h3>
+                        <div class="orange_line4">
+                            <img src="img/orangeline.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Praesentium dolores dicta numquam? Eligendi, itaque. Eius.</p>
+                    </div>
+                        <div class="eighth_page_upper_icons">
+                            <div class="geolocation">
+                                <img src="img/geo.jpg" alt="Геолокация">
+                                <p>Санкт-Петербург</p>
+                                <p>Невский проспект 11</p>
+                            </div>
+                            <div class="letter">
+                                <img src="img/letter.jpg" alt="Письмо">
+                                <p>info@companyname.com</p>
+                            </div>
+                            <div class="phone">
+                                <img src="img/phone.jpg" alt="Телефон">
+                                <p>+7 999-999-99-99</p>
+                            </div>
+                        </div>
+                    
+                        <div class="leave_me_a_message">
+                            <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
+                            <p><input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Email"><br>
+                            <textarea name="message_textarea" id="message_textarea" cols="104" rows="8" placeholder="Сообщение"></textarea><br>
+                            </p>
+                        </div>
+                    
+                    <div class="eighth_page_submit">
+                        <p><input type="submit" value="Отправить"></p>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Praesentium dolores dicta numquam? Eligendi, itaque. Eius.</p>
             </div>
-            <div class="eighth_page_upper_icons">
-                <div class="geolocation">
-                    <img src="img/geo.jpg" alt="Геолокация">
-                    <p>Санкт-Петербург</p>
-                    <p>Невский проспект 11</p>
-                </div>
-                <div class="letter">
-                    <img src="img/letter.jpg" alt="Письмо">
-                    <p>info@companyname.com</p>
-                </div>
-                <div class="phone">
-                    <img src="img/phone.jpg" alt="Телефон">
-                    <p>+7 999-999-99-99</p>
-                </div>
-            </div>
-            <div class="leave_me_a_message">
-                <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
-                <p><input type="text" placeholder="Имя">
-                <input type="text" placeholder="Email"><br>
-                <textarea name="message_textarea" id="message_textarea" cols="104" rows="8" placeholder="Сообщение"></textarea><br>
-                </p>
-            </div>
-            <div class="eighth_page_submit">
-                <p><input type="submit" value="Отправить"></p>
-            </div>
+            
         </section>
 
         <div class="map">
@@ -264,6 +335,6 @@
     </footer>
 
     </main>
-
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
