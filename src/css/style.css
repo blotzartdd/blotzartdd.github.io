@@ -418,6 +418,18 @@ nav{
     font-size: 17px;
 }
 
+@media (max-width: 1200px){
+    .opencloud_img img{
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 800px){
+    .opencloud_img img{
+        max-width: 400px;
+    }
+}
+
 .fifth_page_main h2{
     text-align: center;
     padding-top: 112px;
@@ -521,9 +533,28 @@ nav{
     border-radius: 10px;
 }
 
+@media (max-width: 1200px){
+    .total_line_img img{
+        max-width: 600px;
+    }
+}
+
+@Media (max-width: 800px){
+    .total_line_img img{
+        max-width: 400px;
+    }
+}
+
 .sixth_page_main{
     background: url("../img/stats_bg.jpg") center/80% 50% no-repeat local;
     background-attachment: fixed;
+}
+
+@media (max-width: 1000px){
+    .sixth_page_main{
+        background: url("../img/stats_bg.jpg") center/auto 100% no-repeat local;
+        background-attachment: fixed;
+    }
 }
 
 
@@ -629,6 +660,12 @@ nav{
 
 .eighth_page_main{
     background: url("../img/contact_bg.jpg") center/100% 100% no-repeat local ;
+}
+
+@media(max-width: 1000px){
+    .eighth_page_main{
+        background: url("../img/contact_bg.jpg") center/auto 100% no-repeat local;
+    }
 }
 
 .eighth_page_main p{
