@@ -1,2 +1,1 @@
-#
-HTML and CSS, Python 3 and ML , VR/AR
+Python 3 and ML, junk
