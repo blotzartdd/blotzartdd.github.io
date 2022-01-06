@@ -1,1 +1,1 @@
-Python 3 and ML, junk
+Python 3 and ML, my sems
